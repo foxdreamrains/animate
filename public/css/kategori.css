@@ -1,0 +1,387 @@
+.kat {color: white;}
+#pakaian
+{background: black;}
+#BrandLogo {font-family: 'Rancho', cursive; font-size: 3.7vmax;}
+#logo {position: absolute; left: 40%; top: -14%;}
+#card1 {background: green; color: white;}
+#card2 {background: #b52419; color: white;}
+#card3 {background: #ff7100; color: white;}
+#card4 {background: blue; color:white;}
+#card5 {background: #528fc4; color: white;}
+#card6 {background: #24b9d4; color: white;}
+#card7 {}
+#card8 {}
+#card9 {}
+#card10 {}
+#card11 {}
+#card12 {background: black; color: white}
+
+#panel {color: white;}
+#footer{background: black}
+#panel{font-family: 'Bai Jamjuree', sans-serif;}
+#navBG{
+  background-color: black;
+}
+#kontak{ /*Berada di Kontak*/
+    text-align: center; 
+    background-color: white; 
+    color: black;}
+#noTlp{text-align: center; font-size: 18px;}
+#noTlp2{text-align: center; font-size: 18px; padding-bottom: 60px;}
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: : #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* label focus color */
+.input-field input:focus + label {
+   color: #7D4A82 !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+   border-bottom: 1px solid #7D4A82 !important;
+   box-shadow: 0 1px 0 0 #7D4A82 !important
+}
+
+/* label focus color */
+.input-field input:focus + label {
+   color: #7D4A82 !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+   border-bottom: 1px solid #7D4A82 !important;
+   box-shadow: 0 1px 0 0 #7D4A82 !important
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 16px;
+    color: black;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
+
+.pilihan-kategori {
+  position: relative;
+  font-family: Arial;
+}
+
+.select-selected {
+  background-color: grey;
+}
+
+.pilihan-kategori select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 17px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*Psudo Class css */
+.select-items div:nth-child(1){
+  background-color: green;
+  color: green;
+}
+.select-items div:nth-child(2){
+  background-color: #b52419;
+  color: #b52419;
+}
+.select-items div:nth-child(3){
+  background-color: #ff7100;
+  color: #ff7100;
+}
+.select-items div:nth-child(4){
+  background-color: blue;
+  color: blue;
+}
+.select-items div:nth-child(5){
+  background-color: #528fc4;
+  color: #528fc4;
+}
+.select-items div:nth-child(6){
+  background-color: #24b9d4;
+  color: #24b9d4;
+}
+
+#buttonSimpan{
+        background-color: black;
+    }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #filter {
+    position: absolute; 
+    left: 85%; 
+    bottom: -3px; 
+    background-color: black;
+    }
+    /* Untuk penggunaan gambar e-commerce hapus 
+    view->details->detail.blade.php*/
+    #iconShope{
+        position: relative; 
+        left: 10%; 
+        bottom: 
+        50px; 
+        width: 100px;
+    }
+
+    #iconTokped{
+        position: relative; 
+        left: 18%; 
+        bottom: 63px; 
+        width: 120px;
+    }
+    /* Untuk penggunaan button hapus 
+    view->keranjang->card.blade.php*/
+    #cart{
+        background: #e07c8e; 
+        color: white;
+        position: relative; 
+        left: 0%; 
+        top: 8px
+    }
+    /* Untuk memperkecil gambar di cart 
+    view->keranjang->card.blade.php*/
+    #cartImg{
+        width: 100px;
+    }
+    /* Untuk memperkecil input di cart 
+    view->keranjang->card.blade.php*/
+    #cartJumlah{
+        width: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #filter {
+    position: absolute; 
+    left: 85%; 
+    bottom: -3px; 
+    background-color: black;
+    }
+    /* Untuk penggunaan gambar e-commerce hapus 
+    view->details->detail.blade.php*/
+    #iconShope{
+        position: relative; 
+        left: 10%; 
+        bottom: 
+        50px; 
+        width: 100px;
+    }
+
+    #iconTokped{
+        position: relative; 
+        left: 18%; 
+        bottom: 63px; 
+        width: 120px;
+    }
+    /* Untuk penggunaan button hapus 
+    view->keranjang->card.blade.php*/
+    #cart{
+        background: #e07c8e; 
+        color: white;
+        position: relative; 
+        left: 0%; 
+        top: 8px
+    }
+    /* Untuk memperkecil gambar di cart 
+    view->keranjang->card.blade.php*/
+    #cartImg{
+        width: 100px;
+    }
+    /* Untuk memperkecil input di cart 
+    view->keranjang->card.blade.php*/
+    #cartJumlah{
+        width: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #filter {
+    position: absolute; 
+    left: 85%; 
+    bottom: -6px; 
+    background-color: black;
+    }
+    /* Untuk penggunaan gambar e-commerce hapus 
+    view->details->detail.blade.php*/
+    #iconShope{
+        position: relative; 
+        left: 10%; 
+        bottom: 
+        50px; 
+        width: 100px;
+    }
+
+    #iconTokped{
+        position: relative; 
+        left: 18%; 
+        bottom: 63px; 
+        width: 120px;
+    }
+    /* Untuk penggunaan button hapus 
+    view->keranjang->card.blade.php*/
+    #cart{
+        background: #e07c8e; 
+        position: relative; 
+        left: 80%; 
+        top: 0px
+    }
+    /* Untuk memperkecil gambar di cart 
+    view->keranjang->card.blade.php*/
+    #cartImg{
+        width: 150px;
+    }
+    /* Untuk memperkecil input di cart 
+    view->keranjang->card.blade.php*/
+    #cartJumlah{
+        width: 40px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #filter {
+    position: absolute; 
+    left: 85%; 
+    bottom: -6px; 
+    background-color: black;
+    }
+    /* Untuk penggunaan gambar e-commerce hapus 
+    view->details->detail.blade.php*/
+    #iconShope{
+        position: relative; 
+        left: 14%; 
+        bottom: 
+        50px; 
+        width: 100px;
+    }
+
+    #iconTokped{
+        position: relative; 
+        left: 18%; 
+        bottom: 63px; 
+        width: 120px;
+    }
+    /* Untuk penggunaan button hapus 
+    view->keranjang->card.blade.php*/
+    #cart{
+        background: #e07c8e; 
+        position: relative; 
+        left: 80%; 
+        top: 0px
+    }
+    /* Untuk memperkecil gambar di cart 
+    view->keranjang->card.blade.php*/
+    #cartImg{
+        width: 200px;
+    }
+    /* Untuk memperkecil input di cart 
+    view->keranjang->card.blade.php*/
+    #cartJumlah{
+        width: 40px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #filter {
+    position: absolute; 
+    left: 100%; 
+    bottom: -6px; 
+    background-color: black;
+    }
+    /* Untuk penggunaan gambar e-commerce hapus 
+    view->details->detail.blade.php*/
+    #iconShope{
+        position: relative; 
+        left: 14%; 
+        bottom: 
+        50px; 
+        width: 100px;
+    }
+
+    #iconTokped{
+        position: relative; 
+        left: 34%; 
+        bottom: 63px; 
+        width: 120px;
+    }
+    /* Untuk penggunaan buton hapus 
+    view->keranjang->card.blade.php*/
+    #cart{
+        background: #e07c8e; 
+        position: relative; 
+        left: 80%; 
+        top: 0px
+    }
+    /* Untuk memperkecil gambar di cart 
+    view->keranjang->card.blade.php*/
+    #cartImg{
+        width: 200px;
+    }
+    /* Untuk memperkecil input di cart 
+    view->keranjang->card.blade.php*/
+    #cartJumlah{
+        width: 40px;
+    }
+}
+

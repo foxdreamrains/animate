@@ -1,0 +1,100 @@
+#servicesMargin{
+    margin-bottom: 80px;
+    padding: 30px;
+}
+
+#HomeHargaCarousel{
+    font-family: 'Rock Salt', cursive;
+    position: relative;
+    bottom: 100px;
+}
+
+
+#HomeImgCarousel{
+    position: relative;
+    bottom: 20px;
+}
+
+#HomeIconCarousel{
+    position: relative;
+    bottom:50px;
+    left: -7%;
+}
+
+#HomeIconImgCarousel{
+    width: 40px;
+    position: relative;
+    left: 10%;
+    bottom: 15px;
+}
+
+#iconCart{
+    position: relative;
+    bottom:50px;
+    left: -7%;
+}
+
+#iconImg{
+    width: 40px;
+    position: relative;
+    left: 10%
+}
+
+
+#imgBiru{
+    width: 40px;
+    position: relative;
+    left: 80%;
+    top: 23px;
+}
+
+#tanggalGrey{
+    color: grey;
+    position : relative;
+    bottom: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #hargaBiru{
+    color: blue;
+    position: relative;
+    top: 60px;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #hargaBiru{
+    color: blue;
+    position: relative;
+    top: 60px;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #hargaBiru{
+    color: blue;
+    position: relative;
+    top: 30px;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #hargaBiru{
+    color: blue;
+    position: relative;
+    top: 30px;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #hargaBiru{
+    color: blue;
+    position: relative;
+    top: 30px;
+}
+}
