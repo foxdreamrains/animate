@@ -1,5 +1,8 @@
 <p align="center"><img src="https://mercier.co.id/wp-content/uploads/2024/10/Logo-Animate-01.png" width="400"></p>
 
+## LINK DEMO ##
+[animate.ct.ws](https://animate.ct.ws/)
+
 ## TECH ##
 Frontend: VUE.JS / Blade (Laravel)
 Backend: Laravel 
