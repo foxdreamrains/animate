@@ -97,9 +97,9 @@
     <div class="navbar-fixed">
         <nav class="nav-extended" id="navbars">
             <div class="nav-wrapper">
-               <a href="{{ url('/') }}" class="brand-logo center" id="BrandLogo"><img src="{{ asset('img/icon/animate.png') }}" style="width : 231px;"></a>
+               <a href="{{ url('/') }}" class="brand-logo center" id="BrandLogo"><img src="{{ asset('img/icon/animate.png') }}" style="width : 201px;"></a>
                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                    <i class="material-icons">menu</i></a>
+                    <i class="material-icons" style="color:black;">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         @guest
                         <li><a href="{{ url('/') }}">Home</a></li>
