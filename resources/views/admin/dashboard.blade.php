@@ -1,5 +1,5 @@
 @extends('layouts.appadmin')
-@section('title', 'Dice')
+@section('title', 'Animate By Yunna Marcier')
 @section('content')
   <div class="sidebar-wrapper">
     <ul class="nav">

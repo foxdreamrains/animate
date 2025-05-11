@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Hybro Cloth')
+@section('title', 'Animate By Yunna Marcier')
 @section('content')
 <div class="row" style="margin-top: 2%;">
     <div class="col 14 m6 s12 offset-14 offset-m3">

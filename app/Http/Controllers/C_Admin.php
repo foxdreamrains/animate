@@ -26,7 +26,7 @@ class C_Admin extends Controller
     public function login(){
 
     }
-    
+
     // HA<AMAN USER EDIT URUTAN SAMA DENGAN DI ROUTE web.php
     public function userEdit(){
         $user = User::all();
@@ -90,23 +90,25 @@ class C_Admin extends Controller
         return view('admin/produk/produktambah', compact('produk', 'kategori'));
     }
     public function produk_Tambah(Request $request){
-        
+
+
         $this->validate($request, [
             'judul' => 'required',
             'harga' => 'required',
             'deskripsi' => 'required',
-            'img' => 'required|file|image|mimes:jpeg,png,jpg|max:4048',
+            'gambar' => 'required|mimes:jpeg,png,jpg|max:8048',
         ]);
 
-        // menyimpan data file yang diupload ke variabel $file
-        $file = $request->file('img');
-        $hargac = str_replace(".", "", $request->harga);
+        if($request->file('gambar') == null){
+            $gambar = null;
+            }
+        else{
+            $file_image = $request->file('gambar');
+            $gambar = time()."_".$file_image->getClientOriginalName();
+            $tujuan_upload = 'img/barang/baju';
+            $file_image->move($tujuan_upload,$gambar);
+        }
 
-        $nama_file = time()."_".$file->getClientOriginalName();
-
-                // isi dengan nama folder tempat kemana file diupload
-        $tujuan_upload = 'img/barang/baju';
-        $file->move($tujuan_upload,$nama_file);
 
         ProdukKategoriId::create([
             'produk_id' => $request->produk_id,
@@ -116,13 +118,13 @@ class C_Admin extends Controller
         Produk::create([
             'judul' => $request->judul,
             'slug' => Str::slug($request->judul),
-            'harga' => $hargac,
+            'harga' => $request->harga,
             'deskripsi' => $request->deskripsi,
-            'img' => $nama_file,
+            'img' => $gambar,
         ]);
 
         return redirect('admin/produk');
-        
+
     }
     public function produk_Edit($id){
         $produk = Produk::where('id', $id)->get();
@@ -193,7 +195,7 @@ class C_Admin extends Controller
     public function kategori_Edit($id){
         $kategori = Kategori::where('id_kategori', $id)->get();
 
-        return view('admin.kategori.kategorieditupdate', compact('kategori')); 
+        return view('admin.kategori.kategorieditupdate', compact('kategori'));
     }
 
     public function kategori_Update(Request $request){
@@ -216,4 +218,3 @@ class C_Admin extends Controller
 
     // !!! WARNING KHSUSU KATEGORI !!!
 }
-    

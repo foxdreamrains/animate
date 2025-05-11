@@ -1,5 +1,5 @@
 @extends('layouts.appadmin')
-@section('title', 'Dice')
+@section('title', 'Animate By Yunna Marcier')
 @section('content')
       <div class="sidebar-wrapper">
         <ul class="nav">
@@ -134,18 +134,18 @@
                             </div>
                             <div class="form-group">
                                 <div class="file-field input-field">
-                                  <div class="btn">
-                                    <span>Gambar</span>
-                                    <input type="file" value="{{ $produkS->img }}" name="img" multiple>
-                                </div>
-                                <div class="file-path-wrapper">
-                                    <input class="file-path validate form-control" name="imgs" value="{{ $produkS->img }}" type="text" placeholder="Upload one or more files">
+                                    <div class="btn">
+                                        <span>Gambar</span>
+                                        <input type="file" value="{{ $produkS->img }}" name="img" multiple>
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate form-control" name="imgs" value="{{ $produkS->img }}" type="text" placeholder="Upload one or more files">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                             <div style="position: relative; left: 80%">
-                            <input value="Simpan" id="buttonSimpan" class="btn btn-small waves-effect waves-light" type="submit">
-                        </div>
+                                <input value="Simpan" id="buttonSimpan" class="btn btn-small waves-effect waves-light" type="submit">
+                            </div>
                         </form>
                         @endforeach
                         </div>

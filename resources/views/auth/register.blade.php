@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Hybro Cloth')
+@section('title', 'Animate By Yunna Marcier')
 @section('content')
 
 <div class="row" style="margin-top: 7%;">
@@ -21,7 +21,7 @@
                           <span class="helper-text" data-error="wrong" data-success="right">{{ $massage ?? '' }}</span>
                           @enderror
                       </div>
-                  </div> 
+                  </div>
                   <!-- email -->
                   <div class="row mepet">
                     <div class="input-field col s12">
@@ -39,11 +39,11 @@
                           <i class="mdi-action-account-circle"></i>
                           <input id="telepon" class="telepon" type="number" name="telepon" value="{{ old('telepon') }}" required>
                           <label for="name">No Telepon</label>
-                          @error('telepon') 
+                          @error('telepon')
                           <span class="helper-text" data-error="wrong" data-success="right">{{ $massage ?? '' }}</span>
                           @enderror
                       </div>
-                  </div> 
+                  </div>
                 <!-- password -->
                 <div class="row mepet">
                     <div class="input-field col s12">

@@ -1,5 +1,5 @@
 @extends('layouts.appadmin')
-@section('title', 'Dice')
+@section('title', 'Animate By Yunna Marcier')
 @section('content')
       <div class="sidebar-wrapper">
         <ul class="nav">
@@ -130,7 +130,7 @@
                       <?php $i=1;?>
                       @foreach($produk as $produkS)
                       <?php
-                      $hari = array ( 1 =>    
+                      $hari = array ( 1 =>
                         'Senin',
                         'Selasa',
                         'Rabu',
@@ -139,7 +139,7 @@
                         'Sabtu',
                         'Minggu'
                       );
-                      $num = date('N', strtotime($produkS->created_at->format('Y-m-d'))); 
+                      $num = date('N', strtotime($produkS->created_at->format('Y-m-d')));
                       ?>
                       <tbody>
                           <tr>

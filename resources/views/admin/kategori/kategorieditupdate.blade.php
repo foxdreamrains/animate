@@ -1,5 +1,5 @@
 @extends('layouts.appadminkategori')
-@section('title', 'Dice')
+@section('title', 'Animate By Yunna Marcier')
 @section('content')
       <div class="sidebar-wrapper">
         <ul class="nav">
@@ -114,7 +114,7 @@
                 <div class="card-header card-header-primary active">
                   <h4 class="card-title">Edit Produk</h4>
                   <p class="card-category">Hello. Sir Master Admin</p>
-              </div>              
+              </div>
               <div class="card-body">
                 <div class="row">
                   <div class="col-md-12">

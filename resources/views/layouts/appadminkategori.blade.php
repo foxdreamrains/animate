@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <link rel="icon" type="image/png" href="{{ asset('img/icon/icon.png') }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>@yield('title' ?? 'Dice')</title>
+  <title>@yield('title' ?? 'Animate By Yunna Marcier')</title>
 <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 <!--     Fonts and icons     -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -27,10 +27,10 @@
     -->
     <div class="logo">
         <a href="../admins" class="simple-text logo-normal">
-            <i><img  width="60px;" src="{{ asset('img/icon/icon.png') }}"></i> Dice
+            <i><img src="{{ asset('img/icon/animate.png') }}" style="width : 199px;"></i>
         </a>
     </div>
-  
+
   @yield('content')
 
   <!--   Core JS Files   -->

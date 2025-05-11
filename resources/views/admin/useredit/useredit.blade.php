@@ -1,5 +1,5 @@
 @extends('layouts.appadmin')
-@section('title', 'Dice')
+@section('title', 'Animate By Yunna Marcier')
 @section('content')
       <div class="sidebar-wrapper">
         <ul class="nav">
@@ -136,7 +136,7 @@
                               <td>+62 {{ $userS->telepon }}</td>
                               <td class="text-primary"><a href="userEditEdit/{{ $userS->id }}">Edit</a> | <a href="userEditHapus/{{ $userS->id }}">Hapus</a></td>
                           </tr>
-                      </tbody> 
+                      </tbody>
                       <?php $i++; ?>
                       @endforeach
                     </table>

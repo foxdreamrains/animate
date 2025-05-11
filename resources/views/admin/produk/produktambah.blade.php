@@ -1,5 +1,5 @@
 @extends('layouts.appadmin')
-@section('title', 'Dice')
+@section('title', 'Animate By Yunna Marcier')
 @section('content')
       <div class="sidebar-wrapper">
         <ul class="nav">
@@ -149,7 +149,7 @@
                                 <div class="file-field input-field">
                                   <div class="btn btn-small">
                                     <span>Gambar</span>
-                                    <input type="file" name="img">
+                                    <input type="file" name="gambar">
                                 </div>
                             </div>
                         </div>

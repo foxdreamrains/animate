@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Dice')
+@section('title', 'Animate By Yunna Marcier')
 @section('content')
 
 <div class="slider">
@@ -8,7 +8,7 @@
         <img src="{{ asset('img/slide/slide1.jpg') }}"> <!-- random image -->
         <div class="caption right-align">
           {{-- <h3 style="color: black;">Buy 1 Get 1</h3>
-          <h5 class="light grey-text text-lighten-3">Dapatkan sekarang belanja di Dice Sale semakin mudah</h5> --}}
+          <h5 class="light grey-text text-lighten-3">Dapatkan sekarang belanja di Animate By Yunna Marcier semakin mudah</h5> --}}
           <img src="{{ asset('img/icon/shopee.png') }}" style="width : 60px;">
       </div>
   </li>
@@ -16,46 +16,13 @@
     <img src="{{ asset('img/slide/slide2.jpg') }}"> <!-- random image -->
     <div class="caption left-align">
       {{-- <h3 style="color: purple">Buy 1 Get 1</h3>
-      <h5 class="light yellow-text text-lighten-3"></h5> --}}
+      <h5 class="light yellow-text text-lighten-3">Animate By Yunna Marcier</h5> --}}
       <img src="{{ asset('img/icon/tokopedia.png') }}" style="width : 60px;">
   </div>
 </li>
 </ul>
 </div>
 
-<section id="services" class="services grey lighten-3" id="servicesMargin" style="padding: 30px;">
-    <div class="container">
-        <div class="row">
-            <h3 class="light center grey-text text-darken-3">Animate Product</h3>
-             @foreach($produkKategori as $katProduk)
-            <div class="col m3 s12">
-                <div class="card-panel center" id="{{ $katProduk->card_kategori }}">
-                    <h5><a href="{{ asset('kategori/'. $katProduk->slug_kategori) }}" id="panel">{{ ucwords($katProduk->nama_kategori) }}</h5>
-                        <p>{{ $katProduk->ket_kategori }}</p></a>
-                    </div>
-                </div>
-                @endforeach
-                <!-- <div class="col m3 s12">
-                    <div class="card-panel center" id="card2">
-                        <h5><a href="{{ route('kategoriDickies') }}" id="panel">Baju Dickies</h5>
-                            <p>terlihat Mnarik, dan Cool</p></a>
-                        </div>
-                    </div>
-                    <div class="col m3 s12">
-                        <div class="card-panel center" id="card3">
-                            <h5><a href="{{ route('kategorimustBeNice') }}" id="panel">Must Be Nice</h5>
-                                <p>Ingin mencari baju pasangan</p></a>
-                            </div>
-                        </div>
-                        <div class="col m3 s12">
-                            <div class="card-panel center" id="card4">
-                                <h5><a href="{{ route('kategoriJRipNdip') }}" id="panel">RipNdip</h5>
-                                    <p>Atau ingin bergaya seperti Rock'roll</p></a>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                </section>
                 <div class="carousel">
                     @foreach($produk as $produkS)
                     <a class="carousel-item" href="{{ asset('detail/'. $produkS->slug) }}">

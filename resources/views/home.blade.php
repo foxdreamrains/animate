@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Dice')
+@section('title', 'Animate By Yunna Marcier')
 @section('content')
 
 <div class="slider">
