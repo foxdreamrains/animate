@@ -1,6 +1,6 @@
 <p align="center"><img src="https://mercier.co.id/wp-content/uploads/2024/10/Logo-Animate-01.png" width="400"></p>
 
-## LINK DEMO ##
+## LINK PREVIEW ##
 [animate.ct.ws](https://animate.ct.ws/)
 
 ## TECH ##
